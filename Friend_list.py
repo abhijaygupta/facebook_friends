@@ -26,7 +26,7 @@ while (x != -1):
 	x = x + 5;
 	y = str.find(",", x);
 	tokenid =  str[x:y]
-	print tokenid
+	#print tokenid
 	if (tokenid.startswith('"') and tokenid.endswith('"')):
 		tokenid = tokenid[1:-1]
 	friend_list.append(tokenid)
@@ -37,27 +37,47 @@ print(' ')
 
 
 
-print friend_list
-print len(friend_list)
+#print friend_list
+#print len(friend_list)
 
 
 friends = graph.get_connections(id='me', connection_name='friends')
 
-print friends['name']
+#print friends['name']
 
 
-person = graph.get_object(id='1431065908')
-print person
+#person = graph.get_object(id='1431065908')
+#print person
 
+print(' ')
 
-for friend in friends['data']:
-	print friend['name']
-	print friend['id']
-	person = graph.get_object(id = friend['id'])
-	print person
-	#print person["gender"]
+for i in friend_list:
+	person = graph.get_object(id = i)
+	print person['name']
+	print person['updated_time']
 
-post = graph.get_object(id='post_id')
-print(post['message'])
+# for friend in friends['data']:
+# 	print friend['name']
+# 	print friend['id']
+# 	person = graph.get_object(id = friend['id'])
+# 	print person
+# 	#print person["gender"]
+
 
 print "hey";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
