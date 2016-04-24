@@ -2,7 +2,7 @@ import facebook
 
 
 
-graph = facebook.GraphAPI(access_token='CAACEdEose0cBAPM5CrLTXKHanGUMKxlYTKCBsyeY6l4W4So58ZBG0aOy82xnXAZAZAxvhKLKdLyhlHaQA5EDPCRojsb1fC7ZBobR4Lez2E4S0MGOUPj5SSXTxe20MpiCu2u2lVfqzhHANUTjdoU0H0S0o0WRcuV6t4ZBhdKZCL3T4kllIv7goabpTZBWjTpbIiT6NERg1JdntVLnug022r5', version='2.2')
+graph = facebook.GraphAPI(access_token='###', version='2.2')
 
 
 # f = open('test.txt', 'r')
